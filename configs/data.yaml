@@ -1,0 +1,7 @@
+raw_path: data/raw/creditcard.csv
+interim_path: data/interim/
+processed_path: data/processed/
+target_column: Class
+test_size: 0.2
+val_size: 0.1
+random_seed: 42

@@ -1,0 +1,6 @@
+experiment_name: fraud_detection
+run_name: xgb_v1
+threshold: 0.5
+artifact_dir: artifacts/
+mlflow_tracking_uri: ""
+log_model: true

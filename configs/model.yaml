@@ -1,0 +1,17 @@
+baseline:
+  name: logistic_regression
+  params:
+    C: 1.0
+    max_iter: 1000
+    class_weight: balanced
+    random_state: 42
+
+production:
+  name: xgboost
+  params:
+    n_estimators: 300
+    max_depth: 6
+    learning_rate: 0.05
+    scale_pos_weight: 578
+    eval_metric: aucpr
+    random_state: 42

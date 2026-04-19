@@ -1,0 +1,50 @@
+# Data
+data/raw/
+data/interim/
+data/processed/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Artifacts (keep structure, ignore files)
+artifacts/models/*.joblib
+artifacts/encoders/*.joblib
+
+# MLflow tracking (can be large)
+mlruns/
+
+# Env
+.env
+.env.local
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Testing
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# Ruff / Black
+.ruff_cache/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Kaggle API token
+kaggle.json

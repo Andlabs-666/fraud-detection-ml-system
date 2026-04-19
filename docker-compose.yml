@@ -1,0 +1,27 @@
+version: "3.9"
+
+services:
+  fraud-api:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./artifacts:/app/artifacts
+      - ./configs:/app/configs
+    environment:
+      - MODEL_PATH=/app/artifacts/models/production_model.joblib
+      - ENCODER_PATH=/app/artifacts/encoders/preprocessor.joblib
+    restart: unless-stopped
+
+  mlflow:
+    image: python:3.11-slim
+    command: >
+      bash -c "pip install mlflow && mlflow ui
+      --backend-store-uri /mlruns
+      --host 0.0.0.0
+      --port 5000"
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./mlruns:/mlruns
+    restart: unless-stopped

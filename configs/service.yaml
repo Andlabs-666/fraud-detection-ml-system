@@ -1,0 +1,6 @@
+model_path: artifacts/models/production_model.joblib
+encoder_path: artifacts/encoders/preprocessor.joblib
+host: 0.0.0.0
+port: 8000
+reload: false
+log_level: info
