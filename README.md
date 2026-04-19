@@ -316,17 +316,4 @@ fraud-detection-ml-system/
 2. **Class Imbalance**: Extreme imbalance (578:1) requires special handling
 3. **Temporal Aspects**: Dataset spans 2 days; may not capture weekly/monthly patterns
 
-## Roadmap
-
-- [ ] Add SHAP explanations for individual predictions
-- [ ] Implement A/B testing for model deployment
-- [ ] Add monitoring for model drift detection
-- [ ] Integrate with Kafka for real-time scoring
-
-## Resume-Ready Impact Statement
-
-> Built a production-grade ML system for credit card fraud detection using XGBoost, FastAPI, and Docker. Achieved 0.98+ ROC AUC with 0.85+ recall. The system processes real-time predictions via REST API with <50ms latency. Deployed to Kubernetes with automated CI/CD through GitHub Actions.
-
----
-
 **Tech Stack**: Python 3.11, XGBoost, scikit-learn, FastAPI, MLflow, Docker, GitHub Actions
